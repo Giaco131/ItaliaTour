@@ -1,5 +1,9 @@
 #include "librerie.h"
+<<<<<<< HEAD
 
+=======
+//Giaco131
+>>>>>>> Giaco131
 int main(){
     system("title ItaliaTour");
     system("color f3");
