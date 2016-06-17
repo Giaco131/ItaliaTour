@@ -13,5 +13,6 @@
 #include "letturaFile.h"
 #include "funzioniGenerali.h"
 #include "sqlite3.h"
+#include "creazioneHtml.h"
 
 using namespace std;

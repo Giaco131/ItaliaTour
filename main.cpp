@@ -8,6 +8,7 @@ int main(){
     paese italia;
     
     if(!leggiFile(italia)){
+        creazioneCitta();
         char nomeCitta[MAX_CAR];
         int scelta;
         
