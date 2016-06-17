@@ -1,5 +1,5 @@
 #include "librerie.h"
-//Giaco131
+
 int main(){
     system("title ItaliaTour");
     system("color f3");
