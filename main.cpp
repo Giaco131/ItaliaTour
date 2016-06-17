@@ -1,5 +1,5 @@
 #include "librerie.h"
-
+// andate tutti a farvi fottere !!!!
 int main(){
     system("title ItaliaTour");
     system("color f3");
