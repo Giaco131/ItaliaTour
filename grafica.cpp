@@ -7,7 +7,7 @@ void corniceAlto( ){
     cout<<(char)187<<endl;
 }
 
-void corniceBasso(){
+void corniceBasso(								){
     cout<<(char)200;
     for(int i=0; i<64 ;i++)
         cout<<(char)205;
