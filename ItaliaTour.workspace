@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="ItaliaTour" Database="">
-  <Project Name="ItaliaTour" Path="ItaliaTour/ItaliaTour.project" Active="Yes"/>
+  <Project Name="ItaliaTour" Path="ItaliaTour.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="ItaliaTour" ConfigName="Debug"/>
+      <Project Name="ItaliaTour" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
+      <Project Name="ItaliaTour" ConfigName="Release"/>
       <Project Name="ItaliaTour" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>

@@ -104,5 +104,7 @@
     <File Name="record.h"/>
     <File Name="sqlite3.c"/>
     <File Name="sqlite3.h"/>
+    <File Name="creazioneHtml.h"/>
+    <File Name="creazioneHtml.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>
