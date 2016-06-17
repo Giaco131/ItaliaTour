@@ -21,7 +21,7 @@ void corniceMedio(     ){
     cout<<(char)185<<endl;
 }
 
-void car(){
+void car(      ){
     cout<<(char)186;
 }
 
