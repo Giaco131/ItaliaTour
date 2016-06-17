@@ -14,7 +14,7 @@ void corniceBasso(){
     cout<<(char)188<<endl;
 }
 
-void corniceMedio(){
+void corniceMedio(     ){
     cout<<(char)204;
     for(int i=0; i<64 ;i++)
         cout<<(char)205;
