@@ -1,6 +1,6 @@
 #include "librerie.h"
 
-void corniceAlto(){
+void corniceAlto( ){
     cout<<(char)201;
     for(int i=0; i<64 ;i++)
         cout<<(char)205;
