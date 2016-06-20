@@ -66,7 +66,7 @@ void creazionePuntiInteresse(){
     file<<"\t\t<title>Punti di interesse</title>"<<endl;
     file<<"\t</head>"<<endl;
     file<<"\t<body bgcolor=\"orange\">"<<endl;
-    file<<"\t\t<h1>Citt&agrave</h1>"<<endl;
+    file<<"\t\t<h1>Punti di Interesse</h1>"<<endl;
     file<<"\t\t<table align=\"center\" bgcolor=\"lightblue\" border=1 width=100%>"<<endl;
     file<<"\t\t\t<tr>"<<endl;
     file<<"\t\t\t\t<td><h3>Citt&agrave</h3></td>"<<endl;
