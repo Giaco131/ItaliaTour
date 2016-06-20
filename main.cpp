@@ -8,7 +8,9 @@ int main(){
     paese italia;
     
     if(!leggiFile(italia)){
-        
+		
+		creaCartelle();
+
         creazioneCitta();
         creazionePuntiInteresse();
         
@@ -145,6 +147,8 @@ int main(){
             system("cls");
         }while( scelta != 0);
         
+		creazionePdf();
+		
         return 0;
     }
     

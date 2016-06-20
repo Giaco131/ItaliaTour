@@ -106,5 +106,10 @@
     <File Name="sqlite3.h"/>
     <File Name="creazioneHtml.h"/>
     <File Name="creazioneHtml.cpp"/>
+    <File Name="creazionePDF.h"/>
+    <File Name="creazionePDF.cpp"/>
+    <File Name="pdf.h"/>
+    <File Name="dllbegin.inc"/>
+    <File Name="dllend.inc"/>
   </VirtualDirectory>
 </CodeLite_Project>

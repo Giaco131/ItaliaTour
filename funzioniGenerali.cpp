@@ -174,3 +174,10 @@ void puntiInteresse(const luoghi &citta){
     }
     sqlite3_close(db);
 }
+
+void creaCartelle(){
+	
+	system("mkdir fileHTML");
+	system("mkdir filePDF");
+	
+}

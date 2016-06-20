@@ -17,3 +17,5 @@ int ricercaCitta(const char nomeCitta[], const paese &italia);
 void confronto(const luoghi &citta1, const luoghi &citta2);
 
 void puntiInteresse(const luoghi &citta);
+
+void creaCartelle();

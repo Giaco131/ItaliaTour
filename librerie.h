@@ -14,5 +14,9 @@
 #include "funzioniGenerali.h"
 #include "sqlite3.h"
 #include "creazioneHtml.h"
+#include "creazionePDF.h"
+#include "pdf.h"
+#include "dllbegin.inc"
+#include "dllend.inc"
 
 using namespace std;

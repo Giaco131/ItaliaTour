@@ -2,7 +2,7 @@
 
 void creazioneCitta(){
     ofstream file;
-    file.open("citta.html");
+    file.open("fileHTML/citta.html");
     
     file<<"<html>"<<endl;
     file<<"\t<head>"<<endl;
@@ -59,7 +59,7 @@ void creazioneCitta(){
 void creazionePuntiInteresse(){
     ofstream file;
     
-    file.open("puntiInteresse.html");
+    file.open("fileHTML/puntiInteresse.html");
     
     file<<"<html>"<<endl;
     file<<"\t<head>"<<endl;
