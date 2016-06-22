@@ -1,7 +1,5 @@
 #pragma once
 
-#include "librerie.h"
-
 #define CAR_SEPARATORE ';'
 #define CURVATURA_TERRESTRE 0.9996
 
