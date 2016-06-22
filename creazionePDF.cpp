@@ -11,8 +11,8 @@ void creazionePdf(const config &configurazione){
     strcat(comandoPdf_Citta, "Citta.pdf");
     
     system(comandoPdf_Citta);
-    system("PAUSE");
-    system("cls");
+    
+    cout<<endl<<endl<<endl;
     
     cout<<"Creazione Pdf dei punti di interesse delle citta'"<<endl<<endl;
     strcpy(comandoPdf_PuntiInteresse, "wkhtmltopdf.exe ");
