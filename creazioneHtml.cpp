@@ -1,8 +1,13 @@
 #include "librerie.h"
 
-void creazioneCitta(){
+void creazioneCitta(const char percorso[]){
     ofstream file;
-    file.open("fileHTML/citta.html");
+    char percorsoCitta[MAX_PERCORSO];
+    
+    strcpy(percorsoCitta, percorso);
+    strcat(percorsoCitta, "Citta.html");
+    
+    file.open(percorsoCitta);
     
     file<<"<html>"<<endl;
     file<<"\t<head>"<<endl;
@@ -16,8 +21,6 @@ void creazioneCitta(){
     file<<"\t\t\t\t<td><h3>Regione</h3></td>"<<endl;
     file<<"\t\t\t\t<td><h3>Abitanti</h3></td>"<<endl;
     file<<"\t\t\t\t<td><h3>Superficie</h3></td>"<<endl;
-    file<<"\t\t\t\t<td><h3>Longitudine</h3></td>"<<endl;
-    file<<"\t\t\t\t<td><h3>Latitudine</h3></td>"<<endl;
     file<<"\t\t\t\t</tr>"<<endl;
     
     sqlite3_stmt *stmt = NULL;
@@ -38,8 +41,6 @@ void creazioneCitta(){
                 file<<"\t\t\t\t<td>"<<sqlite3_column_text(stmt, 1)<<"</td>"<<endl;
                 file<<"\t\t\t\t<td>"<<sqlite3_column_int(stmt, 2)<<"</td>"<<endl;
                 file<<"\t\t\t\t<td>"<<sqlite3_column_double(stmt, 3)<<"</td>"<<endl;
-                file<<"\t\t\t\t<td>"<<sqlite3_column_double(stmt, 4)<<"</td>"<<endl;
-                file<<"\t\t\t\t<td>"<<sqlite3_column_double(stmt, 5)<<"</td>"<<endl;
                 
                 file<<"\t\t\t</tr>"<<endl;
                 
@@ -56,10 +57,14 @@ void creazioneCitta(){
     sqlite3_close(db);
 }
 
-void creazionePuntiInteresse(){
+void creazionePuntiInteresse(const char percorso[]){
     ofstream filePuntiInteresse;
+    char percorsoPuntiInteresse[MAX_PERCORSO];
     
-    filePuntiInteresse.open("fileHTML/Punti Di Interesse.html");
+    strcpy(percorsoPuntiInteresse, percorso);
+    strcat(percorsoPuntiInteresse,"Punti_Di_Interesse.html");
+    
+    filePuntiInteresse.open(percorsoPuntiInteresse);
     
     filePuntiInteresse<<"<html>"<<endl;
     

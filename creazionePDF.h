@@ -1,5 +1,3 @@
 #pragma once
 
-#include "librerie.h"
-
-void creazionePdf();
+void creazionePdf(const config &configurazione);

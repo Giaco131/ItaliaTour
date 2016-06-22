@@ -3,17 +3,14 @@
 int main(){
     system("title ItaliaTour");
     system("color f3");
+    
     int pos, pos2, cittaTransitorie;
     double distanza;
+    
     paese italia;
+    config configurazione;
     
     if(!leggiFile(italia)){
-		
-		creaCartelle();
-
-        creazioneCitta();
-        creazionePuntiInteresse();
-        
         char nomeCitta[MAX_CAR];
         int scelta;
         
@@ -139,15 +136,26 @@ int main(){
                     system("PAUSE");
                 }
                 break;
+            case 6:
+                MessageBeep(MB_ICONINFORMATION);
+                if(MessageBox(NULL, "[6] <-- Desideri procedere con questa operazione?", "ItaliaTour",  MB_YESNO | MB_ICONQUESTION) == IDYES){
+                    system("cls");
+                    creaCartelle(configurazione);
+
+                    creazioneCitta(configurazione.percorsoHtml);
+                    creazionePuntiInteresse(configurazione.percorsoHtml);
+                    
+                    creazionePdf(configurazione);
+                }
+                break;
             default:
                 MessageBoxA(NULL,"Ha inserito una scelta non valida!","ItaliaTour", MB_OK | MB_ICONERROR);
                 break;
             }
-        
+            
             system("cls");
         }while( scelta != 0);
         
-		creazionePdf();
 		
         return 0;
     }

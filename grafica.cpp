@@ -1,27 +1,27 @@
 #include "librerie.h"
 
-void corniceAlto( ){
+void corniceAlto(){
     cout<<(char)201;
     for(int i=0; i<64 ;i++)
         cout<<(char)205;
     cout<<(char)187<<endl;
 }
 
-void corniceBasso(								){
+void corniceBasso(){
     cout<<(char)200;
     for(int i=0; i<64 ;i++)
         cout<<(char)205;
     cout<<(char)188<<endl;
 }
 
-void corniceMedio(     ){
+void corniceMedio(){
     cout<<(char)204;
     for(int i=0; i<64 ;i++)
         cout<<(char)205;
     cout<<(char)185<<endl;
 }
 
-void car(      ){
+void car(){
     cout<<(char)186;
 }
 
@@ -61,12 +61,20 @@ void menu(){
     corniceMedio();
     car();
 	cout<<"[5]Visualizza punti di interesse di una citta'                  ";
-    car();cout<<endl;
+    car();
+    cout<<endl;
+    
+    corniceMedio();
+    car();
+	cout<<"[6]Crei file html e pdf che contengono le informazioni del db   ";
+    car();
+    cout<<endl;
     
     corniceMedio();
     car();
     cout<<"[0]Per uscire dal programma                                     ";
-    car();cout<<endl;
+    car();
+    cout<<endl;
     
     corniceBasso();
     cout<<endl<<'\t';

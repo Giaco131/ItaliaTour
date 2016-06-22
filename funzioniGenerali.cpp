@@ -175,9 +175,47 @@ void puntiInteresse(const luoghi &citta){
     sqlite3_close(db);
 }
 
-void creaCartelle(){
-	
-	system("mkdir fileHTML");
-	system("mkdir filePDF");
-	
+void creaCartelle(config &configurazione){
+    char percorsoFile[MAX_PERCORSO];
+    ifstream file;
+    
+    corniceAlto();
+    car();
+    cout<<"Inserisci il percorso del file che contiene i percorsi delle    ";
+    car();
+    cout<<endl;
+    
+    car();
+    cout<<"cartelle che dovrebbero contenere i file .html e i .pdf         ";
+    car();
+    cout<<endl;
+    corniceBasso();
+    
+    cout<<"\t\t";
+    
+    cin.getline(percorsoFile, MAX_PERCORSO);
+    
+    file.open(percorsoFile);
+    
+    if(!file)
+        MessageBox(NULL, "Percorso non valido!", "ItaliaTour", MB_OK | MB_ICONERROR);
+    else{
+        file.getline(configurazione.percorsoHtml, MAX_PERCORSO);
+        file.getline(configurazione.percorsoPdf, MAX_PERCORSO);
+        
+        char comandoHtml[MAX_PERCORSO + 6]; //Il "+ 6" serve per contenere anche "mkdir "
+        char comandoPdf[MAX_PERCORSO + 6];
+        
+        strcpy(comandoHtml,"mkdir ");
+        strcpy(comandoPdf,"mkdir ");
+        
+        strcat(comandoHtml, configurazione.percorsoHtml);
+        strcat(comandoPdf, configurazione.percorsoPdf);
+        
+        system(comandoHtml);
+        system("cls");
+        system(comandoPdf);
+        system("cls");
+    }
+    
 }
