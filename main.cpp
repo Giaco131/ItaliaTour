@@ -140,12 +140,13 @@ int main(){
                 MessageBeep(MB_ICONINFORMATION);
                 if(MessageBox(NULL, "[6] <-- Desideri procedere con questa operazione?", "ItaliaTour",  MB_YESNO | MB_ICONQUESTION) == IDYES){
                     system("cls");
-                    creaCartelle(configurazione);
-
-                    creazioneCitta(configurazione.percorsoHtml);
-                    creazionePuntiInteresse(configurazione.percorsoHtml);
                     
-                    creazionePdf(configurazione);
+                    if(creaCartelle(configurazione)){
+                        creazioneCitta(configurazione.percorsoHtml);
+                        creazionePuntiInteresse(configurazione.percorsoHtml);
+                    
+                        creazionePdf(configurazione);
+                    }
                 }
                 break;
             default:

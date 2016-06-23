@@ -175,7 +175,7 @@ void puntiInteresse(const luoghi &citta){
     sqlite3_close(db);
 }
 
-void creaCartelle(config &configurazione){
+int creaCartelle(config &configurazione){
     char percorsoFile[MAX_PERCORSO];
     ifstream file;
     
@@ -197,8 +197,10 @@ void creaCartelle(config &configurazione){
     
     file.open(percorsoFile);
     
-    if(!file)
+    if(!file){
         MessageBox(NULL, "Percorso non valido!", "ItaliaTour", MB_OK | MB_ICONERROR);
+        return 0;
+    }
     else{
         file.getline(configurazione.percorsoHtml, MAX_PERCORSO);
         file.getline(configurazione.percorsoPdf, MAX_PERCORSO);
@@ -217,5 +219,5 @@ void creaCartelle(config &configurazione){
         system(comandoPdf);
         system("cls");
     }
-    
+    return 1;
 }
